@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Skull Tattoo Studio - O melhor lugar para a sua próxima tatuagem."
+    />
+    <meta
+      name="keywords"
+      content="tatuagem, estúdio, arte, arte corporal, design de tatuagem, tatuagem personalizada"
+    />
+    <meta name="author" content="Skull Tattoo Studio" />
+    <meta property="og:title" content="Skull Tattoo Studio" />
+    <meta
+      property="og:description"
+      content="O melhor lugar para a sua próxima tatuagem."
+    />
+    <meta property="og:image" content="https://seusite.com/og-image.jpg" />
+    <meta property="og:url" content="https://seusite.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Skull Tattoo Studio</title>
+  </head>
+  <body>
+    <div id="root" role="main"></div>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-XXXXXX-X");
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        lazyImages.forEach((img) => {
+          img.src = img.dataset.src;
+        });
+      });
+    </script>
+
+    <script type="module" src="/src/main.jsx" defer></script>
+  </body>
+</html>
